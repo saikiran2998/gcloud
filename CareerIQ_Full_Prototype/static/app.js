@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-search]').forEach(input=>input.addEventListener('input',()=>{const t=document.getElementById(input.dataset.search);if(!t)return;const q=input.value.toLowerCase();t.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.innerText.toLowerCase().includes(q));}));});
